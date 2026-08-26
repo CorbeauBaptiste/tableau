@@ -17,6 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install openpyxl
           pip install pyinstaller
           if (Test-Path requirements.txt) { pip install -r requirements.txt }
 
